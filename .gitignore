@@ -1,6 +1,5 @@
-virtual_venv
-src/backend/config/env/db.env
-src/backend/config/env/jwt.env
-/test_front
-/instance
-test_orm.py
+/venv
+.env
+/__pycache__
+/.dist
+test.py

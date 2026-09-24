@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Store Flow 64 — Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style/basis.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/register.css">
+    <link rel="stylesheet" href="style/attention.css">
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body style = "z-index: 0;">
+    <header>
+        <nav class="navbar">
+        <a href="#" class="navbar__logo">Store Flow 64</a>
+        <div class="navbar__links">
+            <a href="#pricing">Prices</a>
+            <a href = "#about">About</a>
+            <a id = "i-contact" style = "cursor:pointer;">Contact</a>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero__content">
+                <span class="eyebrow">SMARTER STORE OPERATIONS</span>
+                <h1 id="page-title">StoreFlow64</h1>
+                <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, libero sed consequat commodo, makes managing your store feel effortless.</p>
+                <a class="button" id = "btn-sign-in">Sign in <span aria-hidden="true">→</span></a>
+                <a class="button" id = "btn-sign-up">Sign up <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero__visual dress-img" aria-label="Image placeholder">
+            </div>
+        </section>
+        <section id = "about" class="about" aria-labelledby="about-title">
+            <div class="section-intro">
+                <span class="eyebrow">MADE FOR GROWTH</span>
+                <h2 id="about-title">About our SaaS</h2>
+                <hr>
+                <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas, asperiores praesentium, veritatis totam omnis labore quibusdam deserunt, excepturi sed aperiam vitae dolore sunt modi enim! Sunt dolores nesciunt adipisci.</p>
+            </div>
+            <div class="about__copy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum eros at dui sodales, a sodales nibh fermentum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue sed ligula malesuada facilisis quis sit amet velit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+            </div>
+        </section>
+        <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+            <div class="section-intro pricing__intro">
+                <span class="eyebrow">SIMPLE PRICING</span>
+                <h2 id="pricing-title">Pick your flow</h2>
+            </div>
+            <div class="plans">
+                <article class="plan">
+                <h3>Free</h3>
+                <p class="price"><strong>$0</strong><span> forever</span></p>
+                <ul>
+                    <li>Lorem ipsum dolor</li><li>Consectetur elit</li><li>Integer interdum</li><li>Sed posuere libero</li><li>Basic support</li>
+                </ul>
+                <a class="plan__link" id = "get-started-free">Get started</a>
+                </article>
+                <article class="plan">
+                <h3>Basic</h3>
+                <p class="price"><strong>$5</strong><span> per month</span></p>
+                <ul>
+                    <li>Lorem ipsum dolor</li><li>Consectetur elit</li><li>Integer interdum</li><li>Sed posuere libero</li><li>Priority support</li>
+                </ul>
+                <a class="plan__link" id = "i-basic">Get started</a>
+                </article>
+                <article class="plan plan--featured">
+                <span class="badge">MOST POPULAR</span>
+                <h3>Standard</h3>
+                <p class="price"><strong>$10</strong><span> per month</span></p>
+                <ul>
+                    <li>Lorem ipsum dolor</li><li>Consectetur elit</li><li>Integer interdum</li><li>Sed posuere libero</li><li>Dedicated support</li>
+                </ul>
+                <a id = "i-std" class="plan__link">Get started</a>
+                </article>
+                <article class="plan">
+                <h3>Premium</h3>
+                <p class="price"><strong>$30</strong><span> per month</span></p>
+                <ul>
+                    <li>Lorem ipsum dolor</li><li>Consectetur elit</li><li>Integer interdum</li><li>Sed posuere libero</li><li>24/7 support</li>
+                </ul>
+                <a id = "i-premium" class="plan__link">Get started</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!--Modal for the registration-->
+    <div class="modal-overlay" id="i-signup-modal">
+        <section class="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+            <button class="modal-close" type="button" aria-label="Close modal" id = "close-register-modal">×</button>
+            <span class="eyebrow">FREE PLAN</span>
+            <h2 id="signup-title">Create your account</h2>
+            <p class="modal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form class="signup-form" id = "id-form-reg">
+            <div class="form-row">
+                <label>
+                First name
+                <input type="text" id = "id-fname-reg" name="first-name" placeholder="John" required>
+                </label>
+                <label>
+                Last name
+                <input type="text" id = "id-lname-reg" name="last-name" placeholder="Doe" required>
+                </label>
+            </div>
+            <label>
+                Email
+                <input type="email" id = "id-email-reg" name="email" placeholder="john@email.com" required>
+            </label>
+            <label>
+                Password
+                <input type="password" id = "id-password-reg" name="password" placeholder="your password" required>
+            </label>
+            <label>
+                Phone
+                <input type="tel" id = "id-phone-reg" name="phone" placeholder="+1 000 000 0000">
+            </label>
+            <label>
+                Sex
+                <select name="sex" id = "id-sex-reg">
+                <option value="" selected disabled>Select an option</option>
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+                <option value="U">Other</option>
+                </select>
+            </label>
+            <div class="form-row form-row--location">
+                <label>
+                Country
+                <input type="text" id = "id-country-reg" name="country" placeholder="Country">
+                </label>
+                <label>
+                State / Province
+                <input type="text" id = "id-province-reg" name="state" placeholder="State">
+                </label>
+                <label>
+                City
+                <input type="text" id = "id-city-reg" name="city" placeholder="City">
+                </label>
+            </div>
+            <div class="attention-box" id = "id-att-reg">
+                <span class="attention-box__icon">!</span>
+                <div class="attention-box__content">
+                    <h3>Attention</h3>
+                    <p>
+                    Registration not allowed. Check the defined credentials.
+                    </p>
+                </div>
+            </div>
+            <button class="signup-submit" type="submit">Create free account</button>
+            </form>
+        </section>
+    </div>
+    <!--Modal for Login-->
+    <div class="modal-overlay" id="login-modal">
+        <section class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+            <button class="modal-close" id = "close-login-modal" type="button" aria-label="Close modal">×</button>
+            <span class="eyebrow">WELCOME BACK</span>
+            <h2 id="login-title">Sign in to StoreFlow64</h2>
+            <p class="modal-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <form class="login-form" id = "id-login">
+            <label>
+                Email
+                <input
+                type="email"
+                name="email"
+                placeholder="john@email.com"
+                autocomplete="email"
+                id = "id-email-login"
+                required
+                >
+            </label>
+            <label>
+                Password
+                <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                id = "id-pw-login"
+                required
+                >
+            </label>
+            <a class="forgot-password" href="#">Forgot your password?</a>
+            <div class="attention-box" id = "id-att-login">
+                <span class="attention-box__icon">!</span>
+                <div class="attention-box__content">
+                    <h3>Attention</h3>
+                    <p>
+                    Email or password is invalid. Check your email and password and try again!
+                    </p>
+                </div>
+            </div>
+            <button class="login-submit" type="submit">
+                Sign in
+            </button>
+            </form>
+        </section>
+    </div>
+    <!--Modal to show the message-->
+    <div class="attention-overlay" id = "i-attention-modal">
+        <section class="attention-modal" role="alertdialog" aria-modal="true" aria-labelledby="attention-title">
+            <span class="attention-icon">!</span>
+            <h2 id="attention-title">Attention</h2>
+            <p>Content not available yet. It will exist in the future!</p>
+            <button type="button" id = "i-got-it">Got it</button>
+        </section>
+    </div>
+    <!--Modal for contact-->
+    <div class="modal-overlay" id="contact-modal">
+        <section class="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+            <button class="modal-close" type="button" aria-label="Close modal" id = "i-get-out-from-contact">×</button>
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2 id="contact-title">Contact</h2>
+            <p class="modal-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            interdum eros at dui sodales, a sodales nibh fermentum.
+            </p>
+            <form class="contact-modal__form">
+            <label>
+                Email
+                <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+                >
+            </label>
+            <label>
+                Message
+                <textarea
+                name="message"
+                maxlength="2000"
+                placeholder="Write your message here..."
+                required
+                ></textarea>
+            </label>
+            <button class="contact-modal__submit" type="submit">
+                Send message
+            </button>
+            </form>
+        </section>
+    </div>
+    <script src = "./interaction/modals/login.js"></script>
+    <script src = "./interaction/modals/register.js"></script>
+    <script src = "./interaction/modals/attention.js"></script>
+    <script src = "./interaction/modals/contact.js"></script>
+    <script src = "./interaction/register/event.js" type = "module"></script>
+    <script src = "./interaction/login/event.js" type = "module"></script>
+</body>
+</html>

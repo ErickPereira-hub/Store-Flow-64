@@ -14,6 +14,7 @@ export function fetchLogin(bodyHTTP) {
         if (statusCode === 200) {
             console.log("OK");
             console.log(json);
+            document.getElementById("id-att-login").style.display = "none";
         } else {
             document.getElementById("id-att-login").style.display = "flex";
         }

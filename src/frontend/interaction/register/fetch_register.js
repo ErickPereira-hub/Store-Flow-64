@@ -13,7 +13,10 @@ export function fetchRegister(bodyHTTP) {
     }).then(json => {
         if (statusCode === 201) {
             console.log("OK");
+            document.getElementById("id-suc-reg").style.display = "flex";
+            document.getElementById("id-att-reg").style.display = "none";
         } else {
+            document.getElementById("id-suc-reg").style.display = "none";
             document.getElementById("id-att-reg").style.display = "flex";
         }
     }).catch(err => {
